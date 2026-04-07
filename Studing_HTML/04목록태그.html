@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- ol ul사이에는 <p> <div>태그를 사용할 수 없다. ol과 ul사이에 사용할 수 있는 태그는 li태그뿐이다.  -->
+
+    <!-- 순서가 있는 목록 -->
+    <ol>
+        <li>제목단락태그</li>
+        <li>span, em, strong태그</li>
+        <li>img태그</li>
+    </ol>
+
+    <div>
+        <h1>멜론차트 1~100위까지!</h1>
+        <ol>
+            <li>stay</li>
+            <li>신호등</li>
+            <li>바라만본다</li>
+        </ol>
+    </div>
+
+    <!-- 순서가 없는 목록 -->
+    <ul>
+        <li>진라면</li>
+        <li>오징어짬뽕</li>
+        <li>안성탕면</li>
+    </ul>
+
+    <!-- 이미지를 리스트로 할 수도 있음 -->
+    <ul>
+        <li><img src="국수.jpg"></li>
+        <li><img src="연기.jpg"></li>
+    </ul>
+    <!-- 정의 목록 -->
+    <dl>
+        <dt>사실무근</dt>
+        <dd>뿌리도 잎도 없는것.</dd>
+        <dd>전혀 사실에 근거하고 있지 않음.</dd>
+    </dl>
+
+    <dl>
+        <dt>진퇴양난</dt>
+        <dd>나아가는 것과 물어나는 것이 둘다 어려움.</dd>
+    </dl>
+
+    <dl> <!-- 이 방식도 가능 -->
+        <dt>사실무근</dt>
+        <dd>뿌리도 잎도 없는것.</dd>
+        <dd>전혀 사실에 근거하고 있지 않음.</dd>
+        <dt>진퇴양난</dt>
+        <dd>나아가는 것과 물어나는 것이 둘다 어려움.</dd>
+    </dl>
+    <!--dl (Definition List): 전체 정의 목록을 감싸는 울타리입니다.
+        dt (Definition Term): 정의하려는 **용어(이름)**를 넣는 곳입니다.
+        dd (Definition Description): 해당 용어에 대한 **설명(내용)**을 넣는 곳입니다. -->
+
+    <!-- 중첩목록 -->
+    <h1>좋아하는 음식</h1>
+    <ul>
+        <li>중식
+            <ul>
+                <li>짜장면</li>
+                <li>짬뽕</li>
+            </ul>
+        </li>
+        
+        <li>한식
+            <ul>
+                <li>불고기</li>
+                <li>김치</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+
+</html>

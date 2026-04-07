@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table title="3행3열표" id="3행3열표" border="1" cellspacing="0"><!-- 표 생성 -->
+        <tr><!-- 1행 -->
+            <td>1행 1열</td><!-- 테이블데이터 -->
+            <td>1행 2열</td>
+            <td>1행 3열</td>
+        </tr>
+        <tr><!-- 2행 -->
+            <td>2행 1열</td>
+            <td>2행 1열</td>
+            <td>2행 1열</td>
+        </tr>
+        <tr><!-- 3행 -->
+            <td>3행 1열</td>
+            <td>3행 2열</td>
+            <td>3행 3열</td>
+        </tr>
+    </table>
+    <br>
+    <table border="1">
+        <tr>
+            <!-- 제목등 중요한 내용은 th를 쓴다. 그러면 가운대로 정렬되고 글씨가 굵어짐. th는 테이블헤더의 약자임. -->
+            <th>번호</th>
+            <th>소프트웨어</th>
+            <th>결과물</th>
+            <th>난이도</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>포토샵</td>
+            <td>이미지보정</td>
+            <td>쉬움</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>일러스트</td>
+            <td>캐릭터그림기</td>
+            <td>어려움</td>
+        </tr>
+    </table>
+    <br>
+    <table border="1">
+        <tr>
+            <!-- 가로를 합칠때는 colspan을 사용한다. colspan="3"은 3개의 열을 합친다는 뜻이다.
+            세로를 합칠때는 rowspan을 사용한다. rowspan="3"은 3개의 행을 합친다는 뜻이다. -->
+            <td colspan="3">1행1열</td>
+        </tr>
+        <tr>
+            <td>2행1열</td>
+            <td>2행2열</td>
+            <td>2행3열</td>
+        </tr>
+        <tr>
+            <td>3행1열</td>
+            <td>3행2열</td>
+            <td>3행3열</td>
+        </tr>
+    </table>
+    <br>
+    <table border="1">
+        <tr>
+            <td>1행1열</td>
+            <td>1행2열</td>
+            <td>1행3열</td>
+        </tr>
+        <tr>
+            <td rowspan="2">2행1열</td>
+            <td>2행2열</td>
+            <td>2행3열</td>
+        </tr>
+        <tr>
+            <td>3행2열</td>
+            <td>3행3열</td>
+        </tr>
+    </table>
+    <br>
+    <table border="1">
+        <tr>
+            <td colspan="3">1행1열</td>
+        </tr>
+        <tr>
+            <td rowspan="2">2행1열</td>
+            <td colspan="2">2행2열</td>
+        </tr>
+        <tr>
+            <td>3행2열</td>
+            <td>3행3열</td>
+        </tr>
+    </table>
+    <br>
+    <div>
+        <table id="날씨표" title="날씨표입니다." border="1">
+            <tr>
+                <th rowspan="2">지역</th>
+                <th colspan="2">22일(수)</th>
+                <th colspan="2">23일(목)</th>
+            </tr>
+            <tr>
+                <th>오전</th>
+                <th>오후</th>
+                <th>오전</th>
+                <th>오후</th>
+            </tr>
+
+            <tr>
+                <th>서울</th>
+                <td>맑음</td>
+                <td>맑음</td>
+                <td>맑음</td>
+                <td>흐림</td>
+            </tr>
+
+            <tr>
+                <th>대구</th>
+                <td>흐림</td>
+                <td>흐림</td>
+                <td>맑음</td>
+                <td>맑음</td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <div id="중간고사성적표">
+        <table border="1">
+            <caption>중간고사 성적표</caption>
+            <tr>
+                <th>Class</th>
+                <th>학생</th>
+                <th>시험성적</th>
+            </tr>
+            <tr>
+                <th rowspan="2">A반</th>
+                <td>홍길동</td>
+                <td>96점</td>
+            </tr>
+            <tr>
+                <td>춘향</td>
+                <td>87점</td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <div id="2월가계부">
+        <!-- 결과물이 많을때는 테이블해드 바디 풋으로 나눌 수 있음 -->
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>일자</th>
+                    <th>수입</th>
+                    <th>지출</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>2023-02-01</th>
+                    <td>10,000</td>
+                    <td>2,000</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>합계</th>
+                    <td>100,000</td>
+                    <td>8,000</td>
+                </tr>
+            </tfoot>
+
+
+        </table>
+    </div>
+
+    <!-- 이미지도 표로 만들수 있다. -->
+    <table>
+        <tr>
+            <td><img src="연기.jpg" alt="연기"></td>
+            <td><img src="국수.jpg" alt="국수"></td>
+        </tr>
+    </table>
+
+
+</body>
+
+</html>
