@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <label>
+            이메일 주소 : <input type="email" placeholder="id@host"><input type="submit" value="전송">
+            <!-- 타입이 email이면 이메일     url 이면 주소   tel이면 전화번호    search면 검색어 -->
+        </label>
+    </form>
+    <hr>
+    <form>
+        <fieldset> <!-- 폼 내부를 관꼐된 요소끼리 묵어주면서 그룹화하는 태그 -->
+            <legend>회원정보</legend> <!-- 필드셋의 제목을 달아주는 역활 -->
+            email : <input type="email" placeholder="id@host"><br>
+            홈페이지 : <input type="url" placeholder="http://"><br>
+            전화번호 : <input type="tel" placeholder="010-1234-5678">
+            <input type="submit" value="확인"><br><br>
+            <hr>
+            검색어 : <input type="search" placeholder="검색어">
+            <input type="button" value="검색">
+        </fieldset>
+    </form>
+</body>
+
+</html>
