@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <!-- 숫자를 타이핑하거나 화살표로 값을 조절하는 버튼생성 -->
+        <label>
+            지속시간 (0.0 ~ 10.0시간) :
+            <input type="number" min="0.0" max="10.0" step="0.5" value="2.6"><br><br>
+            <!-- min최소값  max최대값   step움직임단위  value초기값-->
+        </label>
+
+        <label>
+            온도설정 : 10&deg;<input type="range" id="rng" min="10" max="30" step="1" list="temperatures"
+                oninput="num.value = this.value" value="20">30&deg;
+            &nbsp;<input type="number" id="num" min="10" max="30" step="1" list="temperatures"
+                oninput="rng.value = this.value" value="20">&deg;C
+            <!-- 양방향으로 range로 조절하는 것과 숫자를 나타내는 것을 연동 oninput을 사용해서 특정id의 값과 내값이 같도록 설정. -->
+        </label>
+        <datalist id="temperatures">
+            <option value="12" label="Low"></option>
+            <option value="20" label="Medium"></option>
+            <option value="28" label="High"></option>
+        </datalist>
+    </form>
+
+</body>
+
+</html>
