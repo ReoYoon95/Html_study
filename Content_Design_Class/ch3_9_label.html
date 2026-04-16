@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form name="fo" method="post">
+        <!-- 라벨안에 넣는방법 이방법을 더 많이 쓴다고 함.-->
+        <label>
+            사용자 ID : <input type="text" size="15" value="">
+        </label><br>
+
+        <!-- 라벨을 따로 뺴고 인풋 아이디와 연동하는 방법 -->
+        <label for="pass">비밀번호 : </label>
+        <input id="pass" type="password" size="15" value="">
+        <input type="submit" value="완료"><br>
+
+        <label> <!-- 이렇게 이미지를 할 수도 있음 -->
+            <input type="radio" name="china" value="1">
+            짜장면<img src="media/짜장.jpg" alt="짜장사진"><br>
+        </label>
+    </form>
+
+</body>
+
+</html>
