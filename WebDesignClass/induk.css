@@ -11,3 +11,5 @@ form{
     font-weight : bold;
     color :blue;
 }
+
+/* 위의 불러온것과 아래 쓴것이 충돌날경우 마지막에 선언한것이 우선 */
