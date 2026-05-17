@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>아이디 : <input type="text" name="id"></p>
+    <p>이름 : <input type="text" name="name"></p>
+    <p>패스워드 : <input type="password"></p>
+    <p>성별 :
+        <input type="radio" name="gender" value="man">남
+        <input type="radio" name="gender" value="woman">여
+    </p>
+    <p>좋아하는 음식은?</p>
+    <p>
+        <input type="checkbox" name="food" value="ch"> 치킨
+        <input type="checkbox" name="food" value="ttuc">떡볶이
+    </p>
+    <p><button>회원가입</button> <input type="button" value="취소">
+        <!-- 버튼태그를 더 많이 사용함 -->
+    </p>
+    <p>태어난 년도?</p>
+    <p>
+        <select>
+            <option>2023</option>
+            <option>2022</option>
+            <option>2021</option>
+            <option selected>2020</option>
+            <!-- 셀렉티드가되면 기본값이 이거임 -->
+            <option>2019</option>
+        </select>
+    </p>
+    <p>여러분들의 의견을 작성해주세요.</p>
+    <p>
+        <textarea placeholder="10줄이상?">
+10줄이상 입력해주세요.
+<!-- placeholder는 비어있을 경우 회색글씨로 나타남. -->
+        </textarea>
+    </p>
+    <p>
+        <label for="name">이름 :</label> <input type="text" id="name">
+    </p>
+    <p>
+        <label for="age">나이 : </label> <input type="text" id="age">
+    </p>
+    <form>
+        <fieldset>
+            <legend>필수정보입력</legend>
+            <p>
+                <label>
+                    이름:<input type="text" placeholder="2자 이상 작성하시오">
+                </label>
+            </p>
+        </fieldset>
+    </form>
+
+
+
+
+</body>
+
+</html>
