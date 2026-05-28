@@ -1,3 +1,19 @@
 @charset "utf-8";
 
+/* 임포트방법
+임포트 url("이름");  */
+
+/* 1. 따옴표 없는 방식 */
+/* import url(4.css); */
+
+/* 2. 작은따옴표 방식 */
+/* import url('4.css'); */
+
+/* 3. 큰따옴표 방식 (추천!) */
+/* import url("4.css"); */
+
+/* 4. url 기호마저 생략한 방식 */
+/* import "4.css";   */
+
+
 .point{background: tomato; color: green;}
