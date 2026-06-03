@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float속성</title>
+</head>
+
+<body>
+    <div class="box1">
+        <img src="../국수.jpg" alt="국수사진">
+        <p>오늘은 건강에 좋은 미역을 이용해서 맛있는 초간단 미역국수를 만들어 봤어요. 미역을 참기름에 볶아서 물을 붓고 국물을 끓였더니 감칠맛 가득 담백해서 너무 맛있더라고요. 미역 자체가 감칠맛도 좋고
+            맛있어서 별다른 재료가 필요없어요.</p>
+    </div>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .box1 {
+            background-color: #fc6;
+            overflow: hidden;
+        }
+
+        .box1 img {
+            float: right;
+            width: 300px;
+            height: 400px;
+        }
+
+        .box1:after {
+            content: "";
+            /* 1. 유령 막내를 소환한다 (빈 내용) */
+            display: block;
+            /* 2. 유령을 블록 덩어리로 만든다 */
+            clear: both;
+            /* 3. 떠 있는 형들 아래로 자리를 잡아 부모의 바닥을 지탱한다 */
+
+            /* :after로 가상의박스를 만들고 컨텐츠에 빈값, 디스플레이로 박스화, 클리어로 양쪽정리 */
+        }
+
+        /* .box2 {clear: both;} 비추천하는 방식 위의 after방식을 사용함.*/
+
+        /* float를 쓰면 부모태그가 자식들 위치를 인지하지 못함. */
+        /* 블록요소태그가 따라서 올라오는 문제도 있음 */
+
+        .box2 {
+            background: #359;
+            height: 300px;
+        }
+
+        .box2 li {
+            width: 100px;
+            height: 100px;
+            background: #ccc;
+            float: left;
+        }
+
+        .box2::after {
+            clear: both;
+            content: "";
+            display: block;
+            /* after를 안써도 되는 조건이 있는데 부모나 조부모클래스에 height를 설정할경우 */
+        }
+    </style>
+    <div class="box2">
+        <ul>
+            <li>블록요소태그</li>
+            <li>블록요소태그</li>
+            <li>블록요소태그</li>
+            <li>블록요소태그</li>
+        </ul>
+    </div>
+    <p>float속성은 태그를 가로 배열시키는 css입니다.</p>
+
+</body>
+
+</html>

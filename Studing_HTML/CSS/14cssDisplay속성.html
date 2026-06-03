@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .a {
+            background-color: greenyellow;
+        }
+
+        .a dl dt {
+            font-style: italic;
+            background-color: green;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        a:after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+
+        .box1 {
+            background-color: #fc6;
+        }
+
+        .box1 ul {
+            font-size: 0;
+            /* 미세하게 블록요소태그가 떨어지는 문제를 해결하기위해 ul을 0을주고 li에서 값을줘서 수정 */
+        }
+
+        .box1 ul li {
+            background: tomato;
+            width: 200px;
+            padding: 10px;
+            display: inline-block;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="a">
+        <h2>display속성 태그의 성질을 결정하는 속성</h2>
+        <dl>
+            <dt>-블락요소</dt>
+            <dd>한줄에 하나씩 태그가 나온다. 세로배열,width,height값이 들어간다.
+                (div, ul, li, dl, dt, dd ,p)
+            </dd>
+            <dt>-라인요소</dt>
+            <dd>나열되서 태그가 나온다. 가로배열,width,height값이 안들어간다
+                (a, span, strong, em)
+            </dd>
+            <dt>-인라인블락요소</dt>
+            <dd>width,height 들어간다. 나열이 된다. 가로배열
+                (폼과 관련된 태그, img)
+            </dd>
+        </dl>
+
+    </div>
+    <div class="box1">
+        <ul>
+            <li>블록요소태그</li>
+            <li>블록요소태그</li>
+            <li>블록요소태그</li>
+            <li>블록요소태그</li>
+        </ul>
+    </div>
+    <hr>
+    <div class="box2">
+        <a href="#">인라인요소태그</a>
+        <a href="#">인라인요소태그</a>
+        <a href="#">인라인요소태그</a>
+        <a href="#">인라인요소태그</a>
+    </div>
+    <style>
+        .box2 {
+            background-color: #369;
+            font-size: 0;
+        }
+
+        .box2 a {
+            background: green;
+            width: 200px;
+            padding: 10px;
+            display: inline-block;
+            font-size: 16px;
+        }
+    </style>
+    <hr>
+    <div class="box3">
+        <p>display:none</p>
+    </div>
+
+    <div class="box4">
+        <p>box4테스트</p>
+    </div>
+    <style>
+        .box3 {
+            background: yellow;
+            padding: 10px;
+        }
+
+        .box3 p {
+            background: tomato;
+            width: 200px;
+            padding: 30px;
+            display: none;
+        }
+
+        .box3:hover p {
+            display: block;
+        }
+
+        .box4 {
+            background-color: lightblue;
+        }
+
+        /* 
+        이런식으로 하는 방법도 있음. */
+        /* 1. 마우스를 올리기 전: 투명하게 (보이지만 않는 상태) */
+        .box4 p {
+            opacity: 0;
+            transition: opacity 0.5s;
+            /* transition은 부드럽게 나타나게 하는 마법 */
+        }
+
+        /* 2. 마우스를 올렸을 때: 불투명하게 */
+        .box4:hover p {
+            opacity: 1;
+        }
+    </style>
+
+</body>
+
+</html>
