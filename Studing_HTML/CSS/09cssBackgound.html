@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box1 {
+            width: 400px;
+            height: 400px;
+            border: 3px solid #000;
+            background-color: #fc6;
+            background-image: url(../연기.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            /* 백그라운드사이즈는 cover->사이즈에 맞게 채움. 또는 400px이렇게 할 수 있음.
+            contain은 이미지를 온전히 보이게 하는 것. */
+            /* 30px 50px 이렇게 쓸 수있고, right center top 등을 변경할 수 있음.
+            right 30px bottom 50px; 이렇게도 가능 */
+            /* 백그라운드 리피트를 안쓰면 위의 이미지가 작을때에는 반복됌.
+            repeat-x나 y로 x,y축만 반복되게 할 수 있고 또는 no-repeat로 완전 반복을 멈출 수 있음 */
+        }
+
+        /* background: #fc6 url() no-repeat left top
+                    배경색 경로 반복    위치 이렇게 한번에 써도 됌 */
+    </style>
+
+</body>
+
+</html>

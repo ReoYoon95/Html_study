@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- div.box$*2>p.a${a$}*3 이렇게 써서 한번에 할 수 있음.-->
+    <div class="box1">
+        <p class="a1">a1</p>
+        <p class="a2">a2</p>
+        <p class="a3">a3</p>
+    </div>
+    <div class="box2">
+        <p class="b1">b1</p>
+        <p class="b2">b2</p>
+        <p class="b3">b3</p>
+    </div>
+    <div class="box3">position:fixed</div>
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box1 {
+            background: #fc6;
+        }
+
+        .box1 p {
+            width: 100px;
+            height: 100px;
+            background: skyblue;
+        }
+
+        /* .box1 .a2{margin-left: 100px;} */
+        .box1 .a2 {
+            position: relative;
+            top: 10px;
+            left: 10px
+        }
+        /* 위의 주석처럼 움직여도 되나, 포지션으로 자기위치 기준으로 얼만큼 움직여라 이렇게 할 수 있음 */
+
+
+        .box2 {
+            position:relative;
+            background: #fcc;
+        }
+
+        .box2 p {
+            width: 100px;
+            height: 100px;
+            background: skyblue;
+        }
+
+        /* .box1 .a2{margin-left: 100px;} */
+        .box2 .a2 {
+            position: relative;
+            top: 10px;
+            left: 10px
+        }
+        .box2 .b2{position:absolute; top: 100; left: 100px;}
+        /* b2를 위로 띄운다, 레이어로 생각하면 이해하기 쉬움. 기준점이 있으면 기준점기준으로 움직임.*/
+
+        .box3{background: red; width: 100; height: 100px; position: fixed; top: 0; right: 0;}
+        /* 포티션 픽스도 공중에 뜸. 포지션의 위치는 화면을 기준으로 함.*/
+
+        /* 포지션 static은 기본 디폴트 값이다. */
+
+    </style>
+
+</body>
+
+</html>

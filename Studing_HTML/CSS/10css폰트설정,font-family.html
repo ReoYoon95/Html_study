@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폰트CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+VIC+Guides&display=swap" rel="stylesheet">
+    <!-- 구글웹폰트에서 가지고온링크 -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Playwrite+AU+VIC+Guides&display=swap"
+        rel="stylesheet">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Ole&display=swap');
+    </style>
+</head>
+
+<body>
+    <!-- 웹폰트 사용하는 방법 -> 임포트로 가지고오면 헤드부분 스타일에 입력
+    링크는 해드부분에 링크 입력 -->
+    <div class="box1">
+        <p class="p1">맑은고딕 123 hello</p>
+        <p class="p2">궁서체 123 hello</p>
+        <p class="p3">나눔명조 123 hello</p>
+    </div>
+
+    <style>
+        .box1 .p1 {
+            font-family: "맑은고딕", sans-serif;
+        }
+
+        .box1 .p2 {
+            font-family: "궁서체";
+        }
+
+        .box1 .p3 {
+            font-family: impact, "나눔명조", "궁서체", serif;
+        }
+
+        /* 폰트가 없을 것을 대비해 다음 폰트설정 영어폰트는 한글은 설정이 안되어 영어 숫자만 적용되는 경우도 있음. ex)p3*/
+    </style>
+
+    <h1>구글웹폰트</h1>
+    <div class="box2">
+        <p class="p1">맑은고딕 123 hello</p>
+        <p class="p2">맑은고딕 123 hello</p>
+        <p class="p3">맑은고딕 123 hello</p>
+    </div>
+
+    <style>
+        .box2 .p1 {
+            font-family: "Playwrite AU VIC Guides", "메이플스토리", cursive;
+        }
+
+        .bo2 .p2 {
+            font-family: "Black Ops One", "메이플스토리", system-ui;
+        }
+
+        .box2 .p3 {
+            font-family: "Ole", system-ui;
+        }
+    </style>
+
+</body>
+
+</html>

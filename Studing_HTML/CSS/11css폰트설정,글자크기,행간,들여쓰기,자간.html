@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폰트관련CSS</title>
+
+</head>
+
+<body>
+    <h1>글자크기 font-size</h1>
+    <div class="box1">
+        <p class="p1">글자크기 font-size 16px</p>
+        <p class="p2">글자크기 font-size 26px</p>
+        <p class="p3">글자크기 font-size 11px</p>
+    </div>
+    안녕하세요.
+
+    <style>
+        .box1 .p2 {
+            font-size: 26px;
+        }
+
+        .box1 .p3 {
+            font-size: 11px;
+        }
+
+        /* 최소폰트사이즈는 10픽셀임 */
+    </style>
+
+    <hr>
+
+    <h1>행간</h1>
+    <div class="box2">
+        <p class="p1">글자크기 30px</p>
+        <p class="p2">글자크기 50px</p>
+        <p class="p3">글자크기 30px, 행간 60px</p>
+    </div>
+
+    <style>
+        .box2 p {
+            background: #fc6;
+        }
+
+        .box2 .p1 {
+            font-size: 30px;
+        }
+
+        .box2 .p2 {
+            font-size: 50px;
+        }
+
+        .box2 .p3 {
+            font-size: 30px;
+            line-height: 2;
+        }
+
+        /* line-heeight를 px로 넣는것보다는 계수로 넣는게 추후수정할때 편함 */
+    </style>
+
+    <hr>
+
+    <h1>들여쓰기 text-indent</h1>
+    <div class="box3">
+        <p class="p1">이 헌법시행 당시에 이 헌법에 의하여 새로 설치될 기관의 권한에 속하는 직무를 행하고 있는 기관은 이 헌법에 의하여 새로운 기관이 설치될 때까지 존속하며 그 직무를 행한다.
+        </p>
+        <p class="p2">이 헌법시행 당시에 이 헌법에 의하여 새로 설치될 기관의 권한에 속하는 직무를 행하고 있는 기관은 이 헌법에 의하여 새로운 기관이 설치될 때까지 존속하며 그 직무를 행한다.
+        </p>
+    </div>
+    <style>
+        .box3 p {
+            background: #fcc;
+            width: 400px;
+        }
+
+        .box3 .p1 {
+            text-indent: 20px;
+        }
+
+        .box3 .p2 {
+            text-indent: -20px;
+        }
+    </style>
+
+    <hr>
+
+    <h1>자간 letter-spacing</h1>
+    <div class="box4">
+        <p class="p1">안녕하세요</p>
+        <p class="p2">안녕하세요</p>
+    </div>
+    <style>
+        .box4 .p1 {
+            font-size: 40px;
+            letter-spacing: -2px;
+        }
+
+        .box4 .p2 {
+            font-size: 40px;
+            letter-spacing: -0.05em;
+        }
+
+        /* em단위가 같는 의미는 숫자 em비율만큼 자간을 벌린다는 뜻임
+        예를 들어 10픽셀의 1em이면 10픽셀만큼 띄운다는거고, 10픽셀의 0.1em만큼 띄운다면 1px만큼 띄운다는 뜻임. */
+    </style>
+
+
+</body>
+
+</html>
